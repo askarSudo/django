@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+{% block titel %}Последнии статьи{% endblock %}
+
+
+{% block content %}
+
+	
+    {% if last_stat %}
+        
+        {% for a in last_stat %}
+            {% if a.id != 10 %}
+
+                <div class='center_block'>
+
+            	    <a class='stat_link' href="{% url 'blog:detail' a.id %}">{{a.stat_nam}}</a>
+
+                    <img class='img_on_list' src="{{ MEDIA_URL }}{{ a.img_stat.url }}">
+
+                    <div class='text_area'>{{a.stat_text}}</div> 
+
+                </div>
+
+                <div class='enter'></div>   
+            {% endif %}                
+
+        {% endfor %}
+
+
+
+
+
+    {% else %}
+        нету =(
+
+    {% endif %}
+<div class='center_block'>
+
+<a class='stat_link' href="/analys">Медиа в Django</a>
+
+<img class='img_on_list' src="/media/img/123.jpg">
+
+<div class='text_area'>Как просто добавить медиа файлы в Django</div> 
+
+</div>
+{% endblock %}
+

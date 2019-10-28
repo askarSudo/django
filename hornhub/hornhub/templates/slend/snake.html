@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block headsnake %}
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="{% static 'snake.css' %}">
+	<title>ЗМЕЙКА</title>
+{% endblock %}
+
+
+{% block snakeboode %}
+	<canvas id="game" width="604" height="604"></canvas>
+	<script src="{% static 'snake.js' %}"></script>
+{% endblock %}

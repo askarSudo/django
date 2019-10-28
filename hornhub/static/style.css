@@ -1,0 +1,196 @@
+body{background-image: linear-gradient(to right, #3c6e91 40%, #008B8B 100%);animation: gif_head  4s infinite ease-in-out;}
+
+div.head_gred{
+  margin-top: 4%;
+  width: 110vw;
+  height:13vw;
+  margin-left: -109vw;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  border-radius: 1.2vw;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #425266 0%, #425266 51%, #425266 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 3vw rgba(0,0,0, 1);
+  transition: .5s;
+  position: fixed;
+  z-index: 100;
+}
+
+.head_gred:hover {margin-left: -15%;}
+
+@keyframes gif_head {
+
+
+ from {
+    background-position: right center;
+    animation-timing-function: ease-in-out;
+  }
+  50%{
+    background-position: left center;
+    animation-timing-function: ease-in-out;
+  }
+  to {
+    background-position: right center;
+    animation-timing-function: ease-in-out;
+  }
+}  
+.stat_link {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  padding: 1vw 5vw;
+  margin-left: 3%;
+  margin-top: 14.5vw;
+  border-radius: 1.2vw;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #7FFFD4 0%, #48D1CC 51%, #5F9EA0 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.4);
+  transition: .5s;
+  position: absolute;  
+}
+.stat_link:hover {background-position: right center;}
+
+div.center_block{
+
+  width: 47vw;
+  height: 19vw;
+  border-radius: 5px;
+  background: rgba(7, 45, 56, 0.23);
+  margin-left: 12%;
+  margin-top: 1%;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+
+}
+
+.img_on_list{
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  margin-left: 3%;
+  margin-top: 3%;
+  border-radius: 5px;
+  width: 24vw;
+  height: 65%;
+  position:absolute;
+}
+
+.img_on_stat{
+  box-shadow: 0 0 2vw rgba(0,0,0,.5);
+  margin-top: 3%;
+  margin-left: 8%;
+  border-radius: 1.2vw;
+  width: 50vw;
+
+  position:relative;
+}
+
+.text_area{
+  margin-left: 57%;
+  margin-top: 3%;
+  border-radius: 5px;
+  background: rgba(82, 134, 156, 0.34);
+  width: 18.5vw;
+  height: 65%;
+  text-shadow: rgba(1, 1, 1, 1);
+  position:absolute;
+}
+
+
+.text_in_llist{}
+
+
+.enter{
+  height: 3vh;
+}
+
+
+
+
+.right_blocke{
+  width: 32vw;
+  height: 100%;
+  border-radius: 5px;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  margin-right: 30%;
+  margin-top: 15%; 
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #008B8B 0%, #48D1CC 51%, #5F9EA0 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+  animation: gif_head  4s infinite ease-in-out;
+  position:absolute;
+  
+}
+
+.center_in_stat{
+  width: 60vw;
+  height: 200vh;
+  border-radius: 3vw;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+  background-image: linear-gradient(to right, #008B8B 0%, #48D1CC 51%, #5F9EA0 100%);
+  margin-left: 20vw;
+  animation: gif_head  4s infinite ease-in-out;
+  position: absolute;
+  z-index: -10
+}
+
+.enter_txt{
+  width: 50vw;
+  height: 20vw;
+}
+
+
+.class_link{
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  color: white;
+  padding: 0.5vw 2.5vw;
+  margin-left: 3%;
+  border-radius: 1.2vw;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #7FFFD4 0%, #48D1CC 51%, #5F9EA0 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.4);
+  transition: .5s;
+  position: relative;  
+}
+.game{
+  width: 15vw;
+  height: 100%;
+  background: #384754;
+  margin-left: 20vw;
+  position: absolute;
+}
+.python{
+  width: 15vw;
+  height: 100%;
+  background: #384754;
+  margin-left: 40vw;
+  position: absolute;
+}
+.class_text{
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  position: relative;
+}

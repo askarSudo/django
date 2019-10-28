@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>{% block titel %}Мой сайт{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    {% block headsnake %}{% endblock %}
+
+</head>
+
+<div class='head_gred'><img  src="/media/smoke.gif" style="margin-left:85%;width:12vw;height:100%;position: absolute;">
+    <div class='game'>
+    	<img  clas='img_class' src="/media/game.png" style="margin-left:3%;width:5vw">
+    	<a class='class_text'>Игры</a>
+    	<a class='class_link' href="/snake">змейка</a>
+    </div>
+    <div class='python'>
+        <img  clas='img_class' src="/media/python.png" style="margin-left:3%;width:5vw">
+        <a class='class_text'>python3</a>
+        <a class='class_link' href="/analys">частотный анализ</a>
+    </div>
+</div>
+<img  src="/media/head.jpeg" style="margin-left:-1vw;width:99vw;border-radius: 10px;box-shadow: 0 0 20px rgba(0,0,0, 1); ">
+
+
+<body clas='main'>
+    {% block snakeboode %}{% endblock %}
+    {% block content %}{% endblock %}
+
+</body>
+
+</html>

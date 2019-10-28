@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block titel %}{{stat.stat_nam}}{% endblock %}
+
+{% block content %}
+<div class="center_in_stat">
+        <a class='text_'>{{stat.stat_nam}}</a>
+        <p class='text_'>{{stat.stat_text}}</p>
+
+        <em class='text_'>{{ stat.pub_date}}</em>
+        <img class='img_on_stat'src="{{stat.img_stat.url}}">
+
+
+        {% if last_coment %}
+        
+            {% for c in last_coment  %}
+                <div class='text_' >
+            	    <strong >{{c.coment_auther}}</strong>
+            	    <p>{{c.coment_text}}</p>
+                </div>
+            {% endfor %}
+
+        {% else %}
+
+        Коментарий не найден
+
+        {% endif %}
+
+    <form class='text_' action="{% url 'blog:leave_coment' stat.id %}" method="POST">
+
+        {% csrf_token %}
+    
+        <input type="text" required placeholder="ваше имя" name="name"><br>
+        <textarea class='enter_txt' name="text" required="" placeholder="Текст комента" ></textarea><br>
+
+        <button class='text_' type="submit">Оставить комент </button>
+
+    </form>
+
+</div>
+
+
+
+{% endblock %}
